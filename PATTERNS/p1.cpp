@@ -1,13 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+void p1(int N) {    
+    for (int i = 0; i < N; i++) {  
+        for (int j = 0; j < N; j++) {
+            cout << "* ";
+        }
+        
+        cout << endl;
+    }
+}
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout<<;
-
-
-    
-
+    int N;
+    cin>>N;
+    cout<<"Enter number:";
+    p1(N); 
     return 0;
 }
