@@ -35,3 +35,4 @@ int main() {
 
     return 0;
 }
+//T:O(N) S:O(N)
