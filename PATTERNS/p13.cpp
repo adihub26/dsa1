@@ -14,7 +14,7 @@ void p13(int N) {
 }
 
 int main() {
-     int N;
+    int N;
     cout<<"Enter number:";
     cin>>N;
     p13(N); 
