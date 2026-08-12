@@ -81,3 +81,34 @@ k = 3
 length = 7
 
 Answer = 7.
+
+Goal:
+Find the longest substring that can be converted into the same
+character using at most k replacements.
+
+freq → frequency of each character
+low → left pointer
+high → right pointer
+maxfreq → highest frequency of any character in current window
+maxlen → longest valid window
+
+Start:
+low = 0
+maxfreq = 0
+maxlen = 0
+
+For every high:
+    Add s[high] to freq
+
+    Update maxfreq
+
+    Calculate:
+        window size - maxfreq
+
+    This tells us how many characters need to be replaced.
+
+    If replacements needed > k:
+        Remove s[low]
+        Move low++
+
+    Update maxlen
