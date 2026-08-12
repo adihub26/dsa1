@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int characterReplacement(vector<int>&fruits){
+int ftb(vector<int>&fruits){
     unordered_map<int,int>freq;
     int low=0,maxlen=0;
     for(int high=0;high<fruits.size();high++){
@@ -31,7 +31,7 @@ int main() {
     }
 
     cout << "Maximum fruits collected: "
-         << characterReplacement(fruits) << endl;
+         << ftb(fruits) << endl;
 
     return 0;
 }
